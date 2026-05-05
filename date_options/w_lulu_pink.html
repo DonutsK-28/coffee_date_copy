@@ -9,16 +9,18 @@
   <style>
     body {
       font-family: 'VT323', monospace;
-      background-image: url(/images/coffee_date_options_background.jpg);
+      background-image: url(../images/coffee_date_layout.jpg);
       background-size: cover;
     }
     .custom-text-box {
-      background-image: url(/images/text_box.png);
       background-size: contain;   
       background-repeat: no-repeat;
       background-position: center;
-      padding: 60px;               
-      display: inline-block;      
+      padding: 40px;               
+      display: inline-block; 
+    .drink_name{
+      text-decoration: wavy;
+    }     
 }
   </style>
 </head>
@@ -29,9 +31,19 @@
         <div class="custom-text-box">
           <p class="display-6"> Oh...my...Gawd. You are, like, so cute, we should go to pilates together.</p>
           </div>
-        <img src="../images/people/coffee_date_llg.png" alt="Stereotypical valley girl, blonde, pink workout suit, surfer's tan.">
-        <img src="../images/drinks/coffee_date_pink.png" class="img-fluid w-25">
-        <div class="mt-4">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="../images/people/coffee_date_llg.png" alt="Stereotypical valley girl, blonde, pink workout suit, surfer's tan." class="img-fluid w-100">
+        </div>  
+        <div class="col-md-4">
+          <img src="../images/drinks/coffee_date_pink.png" class="img-fluid w-100">
+        </div>  
+        <div class="col-md-4">
+          <p><span class="drink_name">The Pink Drink:</span> Those that order this are youthful, energetic, and wanting to fit in with the crowd</p>
+        </div>
+      </div>  
+
+        <div class="mt-5">
           <a href="../index.html" class="btn btn-outline-light px-4">Play again?</a>
         </div>
 
