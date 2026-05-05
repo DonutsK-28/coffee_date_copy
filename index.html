@@ -10,7 +10,9 @@
     body {
       font-family: 'VT323', monospace;
       font-size: 1.5rem; 
-      background-image: url("../images/coffee_date_layout.jpg");
+      /*background-image: url("../images/coffee_date_layout.jpg");*/
+      background-color: rgb(112, 15, 49);
+      background-image: url("../images/image.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -36,30 +38,40 @@
   }
     .btn-image img {
   display: block; 
-  width: 120%;           
+  width: 135%;           
     max-width: 5000px;    
 }
 .btn-image:hover {
   transform: scale(1.05);
 }
+.move-up{
+  margin-top: -20%;
+  text-align: center;
+}
+p{
+  color: antiquewhite;
+}
+.img{
+  width: 50%;
+}
 </style>
 <head>
   <body>
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center move-up">
       </div>
-      <div class="col-md-4 align-items-center">
+      <div class="col-md-4 align-items-center move-up">
         <a href="startpage.html" class="btn-image">
-          <img src="images/coffee_date_title.png" alt="Coffee Date Title Card in pixelated letters." class="img-fluid w-500">
+          <img src="images/coffee_date_title.png" alt="Coffee Date Title Card in pixelated letters." class="img-fluid">
         </a>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center move-up">
       </div>
     </div>
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col text-center">
-        Created by Andrea Alvides and Daanya Khalid
-      </div>>
+        <p>Created by: Andrea Alvidres and Daanya Khalid</p>
+      </div>
     </div>
   </body>
 </head>
