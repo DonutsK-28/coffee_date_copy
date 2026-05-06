@@ -9,45 +9,52 @@
   <style>
     body {
       font-family: 'VT323', monospace;
-      background-image: url(../images/coffee_date_layout.jpg);
+      background-image: url(../images/environment/coffee_date_layout.jpg);
+      
       background-size: cover;
     }
     .custom-text-box {
-      background-image: url("../images/text_box.png");
-      background-size: contain;
+      background-image: url(/images/text_box.png);
+      background-size: contain;   
       background-repeat: no-repeat;
       background-position: center;
-      padding: 10px;               
-      display: inline-block; 
-    }
-    .drink_name{
-      text-decoration: wavy;
-    }     
+      padding: 20%;  
+      margin-top: 50%;             
+      display: inline-block;      
+}
+.people-scale{
+  margin-right: 50%;
+}
+.text-box{
+  margin-left: 50%;
+  margin-top: -30%;
+  width: 70%;
+}
+.date-text{
+  font-size: 200%;
+  color:antiquewhite;
+}
+.img-thumbnail{
+  color: antiquewhite;
+}
+.italics{
+  font-style: italic;
+  text-decoration: underline;
+}
   </style>
 </head>
-<body class="bg-img text-white vh-100 d-flex align-items-center">
+<body>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <div class="custom-text-box">
-          <p class="display-6"> Oh...my...Gawd. You are, like, so cute, we should go to pilates together.</p>
-          </div>
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <img src="../images/people/coffee_date_llg.png" alt="Stereotypical valley girl, blonde, pink workout suit, surfer's tan." class="img-fluid w-100">
-        </div>  
-        <div class="col-md-4">
-          <img src="../images/drinks/coffee_date_pink.png" class="img-fluid w-100">
-        </div>  
-        <div class="col-md-4">
-          <p><span class="drink_name">The Pink Drink:</span> Those that order this are youthful, energetic, and wanting to fit in with the crowd</p>
-        </div>
-      </div>  
-
-        <div class="mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="../images/people/coffee_date_llg.png" class="img-thumbnail mt-4">
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="date-text display-4 fw-bold lead mt-3 align-items-center border-3">
+          <p class="italics">The Lululemon Girl</p>
+          <p>Oh...my...Gawd. You are, like, so cute, we should go to pilates together.</p>
           <a href="../index.html" class="btn btn-outline-light px-4">Play again?</a>
         </div>
-
       </div>
     </div>
   </div>

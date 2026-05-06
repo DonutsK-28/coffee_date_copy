@@ -9,7 +9,8 @@
   <style>
     body {
       font-family: 'VT323', monospace;
-      background-image: url(../images/coffee_date_layout.jpg);
+      background-image: url(../images/environment/coffee_date_layout.jpg);
+      
       background-size: cover;
     }
     .custom-text-box {
@@ -17,25 +18,43 @@
       background-size: contain;   
       background-repeat: no-repeat;
       background-position: center;
-      padding: 60px;               
+      padding: 20%;  
+      margin-top: 50%;             
       display: inline-block;      
+}
+.people-scale{
+  margin-right: 50%;
+}
+.text-box{
+  margin-left: 50%;
+  margin-top: -30%;
+  width: 70%;
+}
+.date-text{
+  font-size: 200%;
+  color:antiquewhite;
+}
+.img-thumbnail{
+  color: antiquewhite;
+}
+.italics{
+  font-style: italic;
+  text-decoration: underline;
 }
   </style>
 </head>
-<body class="bg-img text-white vh-100 d-flex align-items-center">
+<body>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
-        <img src="../images/drinks/coffee_date_icedAmericano.png" class="img-fluid w-25">
-        <img src="/images/finance_bro.png" class="img-fluid w-40" alt="Stereotypical finance bro, zip-up vest, blue button down, gelled back hair.">
-        <img src="../images/drinks/coffee_date_hotAmericano.png" class="img-fluid w-25">
-          <div class="custom-text-box">
-            <p class="display-6 mb-0">You look like no one has explained the stock market to you... I can fix that.</p>
-          </div>
-        <div class="mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="../images/people/coffee_date_financeb.png" class="img-thumbnail mt-4">
+      </div>
+      <div class="col d-flex align-items-center">
+        <div class="date-text display-4 fw-bold lead mt-3 align-items-center border-3">
+          <p class="italics">The Finance Bro</p>
+          <p>You look like no one has explained the stock market to you... I can fix that.</p>
           <a href="../index.html" class="btn btn-outline-light px-4">Play again?</a>
         </div>
-
       </div>
     </div>
   </div>
