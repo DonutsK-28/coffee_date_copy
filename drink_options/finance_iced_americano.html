@@ -40,6 +40,9 @@
   </style>
 </head>
 <body>
+  <audio id="background-music" preload="auto">
+          <source src="../images/freesound_community-kettle-pour-into-cup-001-93575.mp3" type="audio/mpeg">
+        </audio>
      <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -54,5 +57,16 @@
       </div>
     </div>
   </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('background-music');
+      audio.play().catch(error => {
+        console.log("Autoplay blocked. Sound will play on mouse move.");
+        document.addEventListener('mouseover', () => {
+          audio.play();
+        }, { once: true });
+      });
+    });
+  </script>
 </body>
 </html>
